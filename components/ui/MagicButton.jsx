@@ -28,10 +28,9 @@ const MagicButton = ({ title, position, icon, className = "", handleClick, other
         text-xs sm:text-sm md:text-base
         font-medium text-white
         backdrop-blur-xl
-        transition-transform duration-300
+        transition-transform duration-300 gap-3
         " ${otherClasses}`}
             >
-
                 {position === "left" && icon}
                 {title}
                 {position === "right" && icon}
