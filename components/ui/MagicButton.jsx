@@ -4,11 +4,12 @@ import React from "react";
 
 const MagicButton = ({ title, position, icon, className = "", handleClick, otherClasses }) => {
     return (
-        <button
+        <button onClick={handleClick}
             className={`relative inline-flex 
       h-10 sm:h-11 md:h-12
-      overflow-hidden rounded-lg p-[1px]
-      focus:outline-none md:w-60 md:mt-10 cursor-pointer ${className}`}
+      overflow-hidden rounded-lg p-1px
+      focus:outline-none md:w-60 md:mt-10 cursor-pointer
+      ${className} `}
         >
             {/* Animated Border */}
             <span
@@ -28,9 +29,10 @@ const MagicButton = ({ title, position, icon, className = "", handleClick, other
         text-xs sm:text-sm md:text-base
         font-medium text-white
         backdrop-blur-xl
-        transition-transform duration-300 gap-3
+        transition-transform duration-300 gap-3 scale-97 
         " ${otherClasses}`}
             >
+
                 {position === "left" && icon}
                 {title}
                 {position === "right" && icon}
