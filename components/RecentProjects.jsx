@@ -3,11 +3,12 @@
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3D-pin";
+import { FaLocationArrow } from "react-icons/fa";
 
 const RecentProjects = () => {
     return (
         <div className="py-20 ">
-            <h1 className="heading">
+            <h1 className="heading text-purple-300">
                 A small selection of{" "}
                 <span className="text-purple-200">recent projects</span>
             </h1>
@@ -22,10 +23,10 @@ const RecentProjects = () => {
                                 </div>
                                 <img src={img} alt={title} className="z-10 absolute bottom-0" />
                             </div>
-                            <h1 className=" font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                            <h1 className=" font-medium lg:text-xl md:text-xl text-base ">
                                 {title}
                             </h1>
-                            <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 ">
+                            <p className="lg:text-sm lg:font-normal font-light text-sm line-clamp-2">
                                 {des}
                             </p>
                             <div className="flex items-center  justify-between mt-7 mb-3">
@@ -44,10 +45,10 @@ const RecentProjects = () => {
                                 </div>
 
                                 <div className="flex justify-center items-center">
-                                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                                    <p className="flex lg:text-lg md:text-xs text-sm text-purple-400 ">
                                         Check Live Site
                                     </p>
-                                    {/* <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
+                                    <FaLocationArrow className="ms-3" color="#CBACF9" />
                                 </div>
                             </div>
 
