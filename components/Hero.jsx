@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import { TextGenerateEffect } from "./ui/TextGenerateEffect"
 import MagicButton from "./ui/MagicButton"
 import { FaLocationArrow } from "react-icons/fa"
+import Link from "next/link"
 
 const Hero = () => {
     return (
@@ -38,12 +39,15 @@ const Hero = () => {
                         mb-4 text-sm md:text-lg lg:text-2xl">
                             Hi, I&apos;m Adarsh, a React developer based in India.
                         </p>
-                        <a href="#projects">
-                            <MagicButton title="See my work"
-                                icon={<FaLocationArrow />}
-                                position="right"
-                            />
-                        </a>
+                        <Link href="#projects">
+                            <div>
+                                <MagicButton title="See my work"
+                                    icon={<FaLocationArrow />}
+                                    position="right"
+                                />
+
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
